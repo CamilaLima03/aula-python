@@ -15,5 +15,6 @@ for i in range(5):
         print("Número muito baixo")
     elif palpite == numero:
         print ("Parabéns")
+        break
     else:
         print("Game Over")
