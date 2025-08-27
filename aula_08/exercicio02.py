@@ -5,5 +5,5 @@
 #imprimir o numero formatado ou mensagem de erro
 
 numero = int(input("Digite seu telefone com DDD: "))
- print = numero
+
 
