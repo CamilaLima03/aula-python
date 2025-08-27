@@ -4,16 +4,40 @@
 #se for válido formatar padrão
 #imprimir o numero formatado ou mensagem de erro
 
-numero = input("Digite seu telefone com DDD: ")
-valido = True
+numeros = input("Digite o número de telefone com 11 dígitos: ")
 
-for c in numero:
-    contador_repetidos = 0
-    for d in numero:
-        print (f"num c {c} num {d} são iguais? {c==d}")
-        if c==d:
-            contador_repetidos+=1
-        if contador_repetidos >=3:
-            print("Número inválido!")
+
+if len(numeros) != 11:
+    print("numero com tamanho incorreto.")
+elif not numeros.isdigit():
+    print("não é possível gerar um número de telefone com esses valores")
+else:
+    valido = True
+    for c in numeros:
+        cont = 0
+        for d in numeros:
+            if d == c:
+                cont += 1
+        if cont >= 3:
             valido = False
-            break               
+            break
+
+    if not valido:
+        print("não é possível gerar um número de telefone com esses valores")
+    else:
+        print(
+            "("
+            + numeros[0]
+            + numeros[1]
+            + ") "
+            + numeros[2]
+            + numeros[3]
+            + numeros[4]
+            + numeros[5]
+            + numeros[6]
+            + "-"
+            + numeros[7]
+            + numeros[8]
+            + numeros[9]
+            + numeros[10]
+        )
