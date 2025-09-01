@@ -5,3 +5,7 @@
 #ex: 
 #lista 01: [vermelho,azul,verde, amarelo]
 #lista02: [verde, roxo, azul, preto]
+
+lista1 = ["vermelho", "azul", "verde", "amarelo"]
+lista2 = ["verde", "roxo", "azul", "preto"]
+
