@@ -8,4 +8,3 @@ numero_procurado = 5
 contador = 0
 
 for numero in numeros:
-    
