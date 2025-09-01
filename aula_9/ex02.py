@@ -8,4 +8,11 @@
 
 lista1 = ["vermelho", "azul", "verde", "amarelo"]
 lista2 = ["verde", "roxo", "azul", "preto"]
+listarepetidos = []
 
+for item in lista1:
+    print(item)    
+    if item in lista2:
+        listarepetidos.append(item)
+
+print(listarepetidos)        
