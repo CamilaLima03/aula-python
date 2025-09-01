@@ -11,8 +11,7 @@ lista2 = ["verde", "roxo", "azul", "preto"]
 listarepetidos = []
 
 for item in lista1:
-    print(item)    
-    if item in lista2:
+    if item in lista2 and item not in listarepetidos:
         listarepetidos.append(item)
 
 print(listarepetidos)        
