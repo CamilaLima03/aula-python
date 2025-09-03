@@ -21,3 +21,5 @@ disponivelnaloja = list()
 disponivelnosite = list()
 disponivelemambos = list()
 
+
+
