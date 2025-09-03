@@ -13,13 +13,23 @@ estoque_principal = [("Camiseta", 101),
                      ("Tênis", 104)
 ]
 estoque_online = [("Boné", 103),
-                  ("Camisa Polo", 105)
-                  ("Calça", 102)
+                  ("Camisa Polo", 105),
+                  ("Calça", 102),
                   ("Chinelo", 106)
 ]
-disponivelnaloja = list()
-disponivelnosite = list()
-disponivelemambos = list()
+
+set_principal = set(estoque_principal)
+set_online =set(estoque_online)
+
+disponivelnaloja = set_principal.difference(set_online)
+disponivelnosite = set_online.difference(set_principal)
+disponivelemambos = set_principal.intersection(set_online)
+
+print(disponivelnosite)
+print(disponivelnaloja)
+
+
+
 
 
 
