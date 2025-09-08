@@ -16,6 +16,10 @@ while True:
         continue
     if escolha == 1:
        print("\n--- Adicionar---")
-       nome = input("Nome: ").lower()
+       nome = input("Nome: ")
        telefone = int(input("Número: "))
-       contatos_na_agenda[nome][telefone] += nome 
+       contatos_na_agenda[nome] = {"contato": nome, "telefone": telefone}
+
+    if escolha == 2:
+       print("\n--- Buscar Contato---")
+       
